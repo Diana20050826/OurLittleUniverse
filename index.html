@@ -1,0 +1,988 @@
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#26131f">
+    <meta name="description" content="Um pequeno universo criado com amor para a Diana e o Gonçalo.">
+
+    <title>Our Little Universe ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- ACESSO SECRETO DO NOSSO UNIVERSO -->
+<section id="acessoSecreto" class="acesso-secreto">
+    <div class="acesso-cartao">
+        <div class="acesso-simbolo">✦</div>
+
+        <p class="acesso-etiqueta">SISTEMA PRIVADO · N.º 001</p>
+
+        <h1>Our Little Universe</h1>
+
+        <p class="acesso-descricao">
+            Algumas histórias são só para duas pessoas.
+        </p>
+
+        <p class="acesso-pergunta">Introduz o nosso código secreto</p>
+
+        <div id="pontosCodigo" class="pontos-codigo" aria-label="Quatro dígitos">
+            <span class="ponto-codigo"></span>
+            <span class="ponto-codigo"></span>
+            <span class="ponto-codigo"></span>
+            <span class="ponto-codigo"></span>
+        </div>
+
+        <p id="mensagemAcesso" class="mensagem-acesso" aria-live="polite">
+            Apenas nós conhecemos este lugar. ♡
+        </p>
+
+        <div class="teclado-codigo">
+            <button type="button" data-digito="1">1</button>
+            <button type="button" data-digito="2">2</button>
+            <button type="button" data-digito="3">3</button>
+            <button type="button" data-digito="4">4</button>
+            <button type="button" data-digito="5">5</button>
+            <button type="button" data-digito="6">6</button>
+            <button type="button" data-digito="7">7</button>
+            <button type="button" data-digito="8">8</button>
+            <button type="button" data-digito="9">9</button>
+            <button type="button" data-apagar="tudo" class="tecla-apagar">⌫</button>
+            <button type="button" data-digito="0">0</button>
+            <button type="button" id="confirmarCodigo" class="tecla-confirmar">↵</button>
+        </div>
+
+        <p class="acesso-rodape">BUILT WITH LOVE · JUST FOR US</p>
+    </div>
+</section>
+<!-- FIM DO ACESSO SECRETO -->
+
+    <!-- Fundo mágico -->
+    <div class="fundo-magico" aria-hidden="true">
+        <div class="nevoeiro nevoeiro-um"></div>
+        <div class="nevoeiro nevoeiro-dois"></div>
+        <div id="estrelas"></div>
+        <div id="particulas" aria-hidden="true"></div>
+    </div>
+
+    <!-- PRIMEIRO ECRÃ -->
+    <main>
+        <section class="entrada" id="entrada">
+
+            <p class="etiqueta">
+                <span class="ponto-luz"></span>
+                UMA HISTÓRIA SÓ NOSSA
+                <span class="ponto-luz"></span>
+            </p>
+
+            <h1 class="titulo-entrada">
+                Our Little
+                <span>Universe</span>
+            </h1>
+
+            <p class="subtitulo">
+                Há lugares bonitos no mundo...
+                <br>
+                mas o meu lugar favorito é contigo.
+            </p>
+
+            <!-- Fotografia vossa -->
+            <div class="moldura-fotografia">
+                <div class="brilho-fotografia"></div>
+
+                <img
+                    class="fotografia-casal"
+                    src="imagens/beijo.jpeg"
+                    alt="Uma fotografia da Diana e do Gonçalo juntos"
+                >
+
+                <span class="selo-fotografia">♡</span>
+            </div>
+
+            <p class="mensagem-entrada">
+                Fiz este pequeno universo para nós.
+                <br>
+                Para guardar as nossas memórias,
+                os nossos sorrisos e tudo aquilo
+                que ainda vamos viver juntos.
+            </p>
+
+            <p class="assinatura">Com amor, para ti. ♡</p>
+
+            <button class="botao-entrada" id="abrirUniverso">
+                <span>Abre a nossa história</span>
+                <span class="seta">✧</span>
+            </button>
+
+            <p class="nota-entrada">feito com amor, só para nós dois</p>
+
+        </section>
+
+        <!-- PÁGINA PRINCIPAL: REVELADA PELO BOTÃO -->
+        <section class="universo" id="universo" hidden>
+
+            <p class="etiqueta">✦ BEM-VINDOS AO VOSSO UNIVERSO ✦</p>
+
+            <h2 class="titulo-universo">
+                Tu, eu e tudo
+                <span>o que ainda está por vir.</span>
+            </h2>
+
+            <p class="texto-universo">
+                Entre milhões de pessoas, histórias e estrelas,
+                gosto de pensar que a nossa história é o meu
+                pequeno lugar favorito no mundo.
+            </p>
+
+            <div class="cartao-memoria">
+                <span class="icone-coracao">♡</span>
+                <h3>O nosso pequeno universo</h3>
+                <p>
+                    Um lugar para as nossas fotografias,
+                    as nossas músicas, as nossas memórias
+                    e todas as surpresas que ainda vamos descobrir.
+                </p>
+                <span class="decoracao-cartao">D + G · PARA SEMPRE A CRIAR MEMÓRIAS</span>
+            </div>
+<!-- CAÇA AO TESOURO ROMÂNTICA -->
+<section class="caca-tesouro" id="cacaTesouro">
+    <div class="tesouro-conteudo">
+
+        <p class="tesouro-etiqueta">UMA AVENTURA SÓ NOSSA ✨</p>
+
+        <h2>A nossa caça ao tesouro 💌</h2>
+
+        <p class="tesouro-intro">
+            Escondi algumas pistas para ti...
+            Consegues descobrir o nosso pequeno tesouro?
+        </p>
+
+        <div class="tesouro-envelope" id="tesouroEnvelope">
+            <span class="envelope-coracao">♡</span>
+            <span class="envelope-brilho">✦</span>
+            <span class="envelope-texto">Uma surpresa para ti</span>
+        </div>
+
+        <button type="button" class="botao-tesouro" id="comecarTesouro">
+            Começar a aventura ♡
+        </button>
+
+        <div class="tesouro-pista" id="tesouroPista" hidden>
+
+            <p class="pista-numero" id="pistaNumero">PISTA 1 DE 5</p>
+
+            <h3 id="pistaPergunta"></h3>
+
+            <p class="pista-dica" id="pistaDica"></p>
+
+            <form id="formularioPista">
+                <input
+                    type="text"
+                    id="respostaPista"
+                    placeholder="Escreve a tua resposta..."
+                    autocomplete="off"
+                    required
+                >
+
+                <button type="submit" class="botao-tesouro">
+                    Descobrir a pista ✨
+                </button>
+            </form>
+
+            <p id="feedbackPista" class="feedback-pista" aria-live="polite"></p>
+
+            <button
+                type="button"
+                class="botao-tesouro botao-continuar"
+                id="continuarTesouro"
+                hidden
+            >
+                Próxima pista ♡
+            </button>
+
+<!-- OUR LITTLE UNIVERSE: CENTRO DE CONTROLO -->
+<section class="centro-controlo" id="centroControlo">
+
+    <div class="cc-cabecalho">
+        <p class="cc-etiqueta">OUR LITTLE UNIVERSE // SISTEMA 001</p>
+
+        <h2>UNIVERSE<span>.EXE</span></h2>
+
+        <p class="cc-descricao">
+            O universo parece normal...
+            mas há qualquer coisa escondida.
+        </p>
+
+        <div class="cc-estado">
+            <span class="cc-luz-estado"></span>
+            SISTEMA ONLINE
+            <span class="cc-separador">/</span>
+            EXPLORADOR: GONÇALO
+        </div>
+    </div>
+
+    <div class="cc-painel">
+
+        <div class="cc-topo-painel">
+            <span>PAINEL DE EXPLORAÇÃO</span>
+            <span id="ccProgresso">FRAGMENTOS: 0/3</span>
+        </div>
+
+        <p class="cc-instrucao">
+            Seleciona uma localização para investigar.
+        </p>
+
+        <div class="cc-localizacoes">
+
+            <button type="button"
+                class="cc-local"
+                data-local="observatorio">
+
+                <span class="cc-icone">☄</span>
+                <span class="cc-local-nome">Observatório</span>
+                <span class="cc-local-desc">Sinais desconhecidos</span>
+                <span class="cc-local-estado">INVESTIGAR ↗</span>
+            </button>
+
+            <button type="button"
+                class="cc-local"
+                data-local="arquivo">
+
+                <span class="cc-icone">▤</span>
+                <span class="cc-local-nome">Arquivo perdido</span>
+                <span class="cc-local-desc">Dados misteriosos</span>
+                <span class="cc-local-estado">INVESTIGAR ↗</span>
+            </button>
+
+            <button type="button"
+                class="cc-local"
+                data-local="sala">
+
+                <span class="cc-icone">⌘</span>
+                <span class="cc-local-nome">Sala de controlo</span>
+                <span class="cc-local-desc">Anomalia detetada</span>
+                <span class="cc-local-estado">INVESTIGAR ↗</span>
+            </button>
+
+        </div>
+
+        <div class="cc-terminal" aria-live="polite">
+
+            <div class="cc-terminal-topo">
+                <span class="cc-terminal-ponto"></span>
+                <span class="cc-terminal-ponto"></span>
+                <span class="cc-terminal-ponto"></span>
+                <span class="cc-terminal-titulo">terminal://universo</span>
+            </div>
+
+            <div class="cc-terminal-corpo" id="ccTerminal">
+                <p class="cc-linha-sistema">[SISTEMA] Inicialização concluída.</p>
+                <p class="cc-linha-sistema">[AVISO] Foram detetados três sinais desconhecidos.</p>
+                <p class="cc-linha-utilizador">
+                    > A aguardar decisão do explorador...
+                </p>
+            </div>
+
+        </div>
+
+        <div class="cc-fragmentos">
+            <span>FRAGMENTOS RECUPERADOS</span>
+            <div id="ccColecao" class="cc-colecao">
+                <span class="cc-fragmento vazio">? BLOQUEADO</span>
+                <span class="cc-fragmento vazio">? BLOQUEADO</span>
+                <span class="cc-fragmento vazio">? BLOQUEADO</span>
+            </div>
+        </div>
+
+        <p class="cc-nota">
+            NOTA DO PROGRAMADOR: não confies em tudo o que o sistema diz.
+        </p>
+
+    </div>
+<!-- OUR LITTLE UNIVERSE: MAPA ESPACIAL -->
+<section class="jogo-espacial" id="jogoEspacial">
+
+    <div class="jogo-cabecalho">
+        <p class="jogo-etiqueta">UNIVERSE.EXE // MÓDULO 002</p>
+        <h2>Para lá das estrelas</h2>
+        <p>
+            Explora o universo, encontra os portais
+            e descobre o que está escondido.
+        </p>
+    </div>
+
+    <div class="jogo-painel">
+
+        <div class="jogo-barra">
+            <span>SECTOR: OUR LITTLE UNIVERSE</span>
+            <span id="estadoJogo">A preparar a nave...</span>
+        </div>
+
+        <div class="jogo-canvas-caixa">
+            <canvas
+                id="mapaEspacial"
+                width="800"
+                height="500"
+                tabindex="0"
+                role="application"
+                aria-label="Mapa espacial. Usa as setas ou WASD para mover a personagem e a tecla E para investigar portais."
+            ></canvas>
+
+            <div class="jogo-aviso-inicial" id="avisoJogo">
+                <span>✦</span>
+                <p>O universo está à tua espera.</p>
+                <button type="button" id="iniciarJogo">
+                    Entrar no universo
+                </button>
+            </div>
+        </div>
+
+        <div class="jogo-instrucoes">
+            <span>↑ ↓ ← → ou W A S D — Mover</span>
+            <span>E — Investigar portal</span>
+        </div>
+
+        <div class="jogo-controlos-moveis" aria-label="Controlos de movimento">
+            <button type="button" data-mover="cima" aria-label="Mover para cima">↑</button>
+
+            <div class="jogo-controlos-linha">
+                <button type="button" data-mover="esquerda" aria-label="Mover para a esquerda">←</button>
+                <button type="button" data-mover="baixo" aria-label="Mover para baixo">↓</button>
+                <button type="button" data-mover="direita" aria-label="Mover para a direita">→</button>
+            </div>
+
+            <button type="button" id="investigarPortal">Investigar ✦</button>
+        </div>
+
+        <div class="jogo-mensagem" id="mensagemJogo" aria-live="polite">
+            <strong id="tituloMensagemJogo">Missão espacial</strong>
+            <p id="textoMensagemJogo">
+                Encontra os portais espalhados pelo mapa.
+            </p>
+        </div>
+
+        <div class="jogo-legenda">
+            <span>✦ Tu</span>
+            <span>◉ Portal desbloqueado</span>
+            <span>◉ Portal bloqueado</span>
+        </div>
+
+        <button type="button" class="jogo-reiniciar" id="reiniciarJogo">
+            Recomeçar exploração ↻
+        </button>
+
+<!-- INVENTÁRIO SECRETO -->
+<div class="inventario-espacial" id="inventarioEspacial">
+    <div class="inventario-cabecalho">
+        <span class="inventario-icone">✧</span>
+        <div>
+            <p class="inventario-etiqueta">UNIVERSE.EXE // INVENTÁRIO</p>
+            <h3>Fragmentos do nosso universo</h3>
+        </div>
+    </div>
+
+    <p class="inventario-descricao">
+        Cada cristal guarda um bocadinho da nossa história.
+    </p>
+
+    <div class="inventario-progresso">
+        <div class="inventario-progresso-topo">
+            <span>Cristais encontrados</span>
+            <strong id="contadorCristais">0 / 5</strong>
+        </div>
+        <div class="inventario-barra">
+            <div class="inventario-barra-preenchimento" id="progressoCristais"></div>
+        </div>
+    </div>
+
+    <div class="inventario-cristais" id="listaCristais">
+        <div class="cristal-slot" data-cristal="1">?</div>
+        <div class="cristal-slot" data-cristal="2">?</div>
+        <div class="cristal-slot" data-cristal="3">?</div>
+        <div class="cristal-slot" data-cristal="4">?</div>
+        <div class="cristal-slot" data-cristal="5">?</div>
+    </div>
+
+    <p class="inventario-estado" id="estadoCristais">
+        Há cinco cristais escondidos algures no universo...
+    </p>
+
+    <div class="portal-final-bloqueado" id="portalFinal">
+        <span class="portal-final-icone">♡</span>
+        <h3>O nosso destino final</h3>
+        <p id="textoPortalFinal">
+            Portal bloqueado. Ainda há segredos por descobrir.
+        </p>
+    </div>
+</div>
+
+    </div>
+</section>
+
+
+<!-- LEITOR DE MÚSICA — OUR LITTLE UNIVERSE -->
+<section class="universo-musical" id="universoMusical">
+    <div class="musica-cabecalho">
+        <span class="musica-etiqueta">OUR LITTLE UNIVERSE // SOUNDTRACK</span>
+        <h2>A banda sonora do nosso universo</h2>
+        <p>Há músicas que nos fazem lembrar pessoas. Estas fazem-me lembrar de nós. ♡</p>
+    </div>
+
+    <div class="leitor-musica">
+        <div class="disco-musical" id="discoMusical">
+            <div class="disco-centro">♡</div>
+        </div>
+
+        <div class="musica-informacao">
+            <span class="musica-a-tocar">A TOCAR NO NOSSO UNIVERSO</span>
+            <h3 id="nomeMusica">A nossa primeira música</h3>
+            <p id="estadoMusica">Escolhe uma música para começar...</p>
+        </div>
+
+        <audio id="audioUniverso" preload="metadata"></audio>
+
+        <div class="musica-progresso">
+            <span id="tempoAtual">0:00</span>
+            <input
+                type="range"
+                id="barraMusica"
+                min="0"
+                max="100"
+                value="0"
+                step="0.1"
+                aria-label="Posição da música"
+            >
+            <span id="duracaoMusica">0:00</span>
+        </div>
+
+        <div class="musica-controlos">
+            <button type="button" id="musicaAnterior" aria-label="Música anterior">⏮</button>
+            <button type="button" id="botaoPlayMusica" class="botao-play-musica" aria-label="Reproduzir música">▶</button>
+            <button type="button" id="musicaSeguinte" aria-label="Música seguinte">⏭</button>
+        </div>
+
+        <div class="musica-volume">
+            <span>♪</span>
+            <input
+                type="range"
+                id="volumeMusica"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+                aria-label="Volume"
+            >
+            <span>♫</span>
+        </div>
+
+        <div class="lista-musicas">
+            <p class="lista-musicas-titulo">A NOSSA PLAYLIST</p>
+
+            <button type="button" class="faixa-musica ativa" data-faixa="0">
+                <span class="faixa-numero">01</span>
+                <span class="faixa-detalhes">
+                    <strong>Música 01</strong>
+                    <small>Um bocadinho de nós ♡</small>
+                </span>
+                <span class="faixa-icone">♫</span>
+            </button>
+
+            <button type="button" class="faixa-musica" data-faixa="1">
+                <span class="faixa-numero">02</span>
+                <span class="faixa-detalhes">
+                    <strong>Música 02</strong>
+                    <small>Memórias que ficam ✨</small>
+                </span>
+                <span class="faixa-icone">♫</span>
+            </button>
+
+            <button type="button" class="faixa-musica" data-faixa="2">
+                <span class="faixa-numero">03</span>
+                <span class="faixa-detalhes">
+                    <strong>Música 03</strong>
+                    <small>A nossa pequena eternidade ♡</small>
+                </span>
+                <span class="faixa-icone">♫</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+</section>
+
+        </div>
+
+        <div class="tesouro-final" id="tesouroFinal" hidden>
+            <span class="tesouro-final-coracao">♡</span>
+
+            <p class="tesouro-etiqueta">CONSEGUISTE! ✨</p>
+
+            <h3>O nosso pequeno tesouro</h3>
+
+            <p>
+                Entre tantas pessoas no mundo, a vida cruzou os nossos caminhos.
+                E uma das coisas mais bonitas é poder sentir o carinho,
+                a dedicação e a maneira especial como me tratas.
+            </p>
+
+            <p>
+                Não precisamos de uma história perfeita.
+                Gosto da nossa história, dos nossos momentos
+                e de tudo aquilo que ainda vamos viver. 💗
+            </p>
+
+            <p class="tesouro-assinatura">
+                Com amor, para nós os dois ♡
+            </p>
+
+            <button
+                type="button"
+                class="botao-tesouro"
+                id="repetirTesouro"
+            >
+                Voltar a jogar ♡
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CARTA SECRETA -->
+<div class="carta-surpresa">
+    <span class="carta-icone">💌</span>
+
+    <p class="carta-etiqueta">UMA SURPRESA PARA TI</p>
+
+    <h3>Tenho algo para te dizer...</h3>
+
+    <p class="carta-introducao">
+        Há uma pequena mensagem à tua espera.
+    </p>
+
+    <button
+        class="botao-carta"
+        id="abrirCarta"
+        type="button"
+        aria-expanded="false"
+        aria-controls="conteudoCarta"
+    >
+        Abrir a minha carta ♡
+    </button>
+
+    <div class="conteudo-carta" id="conteudoCarta" hidden>
+        <div class="linha-dourada"></div>
+
+        <h4>Para o meu Gonçalo ♡</h4>
+
+        <p>
+            Se pudesse guardar os meus momentos favoritos
+            num só lugar, muitos deles teriam a tua presença.
+        </p>
+
+        <p>
+            Gosto das nossas conversas, dos nossos sorrisos,
+            dos pequenos momentos e de tudo aquilo que
+            estamos a construir juntos.
+        </p>
+
+        <p>
+            Este universo é uma pequena forma de te mostrar
+            que a nossa história é especial para mim.
+            E ainda temos tantas memórias bonitas por criar...
+        </p>
+
+        <p class="assinatura-carta">
+            Com todo o meu carinho, Diana. ♡
+        </p>
+
+        <span class="coracao-final">♥</span>
+    </div>
+</div>
+
+<!-- GALERIA DAS NOSSAS MEMÓRIAS -->
+<section class="galeria-memorias" id="memorias">
+
+    <p class="galeria-etiqueta">♡ OS NOSSOS MOMENTOS ♡</p>
+
+    <h2 class="titulo-galeria">
+        Pequenos momentos,
+        <span>grandes memórias.</span>
+    </h2>
+
+    <p class="texto-galeria">
+        Cada fotografia guarda um bocadinho da nossa história.
+        E estas são apenas algumas das memórias que quero
+        guardar para sempre.
+    </p>
+
+    <div class="grelha-fotografias">
+
+        <button class="foto-memoria foto-um" type="button"
+            data-foto="imagens/beijo.jpeg"
+            data-legenda="Um bocadinho do nosso mundo ♡">
+            <span class="foto-papel">
+                <img src="imagens/abracados.jpeg"
+                    alt="Fotografia da Diana e do Gonçalo juntos">
+                <span class="legenda-foto">o nosso mundo ♡</span>
+            </span>
+        </button>
+
+        <!-- DUPLICA ESTE BLOCO PARA ADICIONAR MAIS FOTOGRAFIAS -->
+
+        <button class="foto-memoria foto-dois" type="button"
+            data-foto="imagens/casal.jpeg"
+            data-legenda="Uma memória só nossa ✨">
+            <span class="foto-papel">
+                <img src="imagens/casal.jpeg"
+                    alt="Uma memória especial do casal">
+                <span class="legenda-foto">só nós ✨</span>
+            </span>
+        </button>
+
+        <button class="foto-memoria foto-tres" type="button"
+            data-foto="imagens/beijo.jpeg"
+            data-legenda="Mais uma página da nossa história">
+            <span class="foto-papel">
+                <img src="imagens/beijo.jpeg"
+                    alt="Uma recordação do casal">
+                <span class="legenda-foto">a nossa história ♡</span>
+            </span>
+        </button>
+
+    </div>
+
+    <p class="nota-galeria">
+        E ainda temos tantas memórias bonitas para criar... ✧
+    </p>
+
+</section>
+
+<!-- FOTOGRAFIA AMPLIADA -->
+<div class="visualizador-foto" id="visualizadorFoto" hidden
+    role="dialog" aria-modal="true" aria-label="Fotografia ampliada">
+
+    <button class="fechar-foto" id="fecharFoto"
+        type="button" aria-label="Fechar fotografia">×</button>
+
+    <img id="fotoAmpliada" src="imagens/beijo.jpeg"
+        alt="Fotografia ampliada do casal">
+
+    <p id="legendaAmpliada"></p>
+</div>
+
+<!-- CANTINHO DAS SURPRESAS -->
+<section class="cantinho-surpresas" id="surpresas">
+
+    <p class="surpresa-etiqueta">UM SEGREDO PARA TI ✦</p>
+
+    <h2>Tenho uma surpresa...</h2>
+
+    <p class="surpresa-descricao">
+        Há pequenas coisas que merecem ser descobertas.
+        Queres experimentar?
+    </p>
+
+    <button class="botao-surpresa" id="botaoSurpresa" type="button">
+        Descobrir uma mensagem ♡
+    </button>
+
+    <div class="mensagem-secreta" id="mensagemSecreta" hidden>
+        <span class="surpresa-coracao">♡</span>
+        <p id="textoSurpresa"></p>
+    </div>
+
+    <div class="desafio-coracao">
+        <p>Agora, toca no coração mágico...</p>
+
+        <button
+            class="botao-coracao-magico"
+            id="coracaoMagico"
+            type="button"
+            aria-label="Ativar o coração mágico"
+        >
+            ♥
+        </button>
+
+        <p class="legenda-magica" id="legendaMagica">
+            Será que guarda algum segredo?
+        </p>
+    </div>
+
+</section>
+
+<!-- CONTADOR DESDE O NOSSO PRIMEIRO BEIJO -->
+<section class="contador-amor" id="contadorAmor">
+    <p class="contador-etiqueta">✦ O INÍCIO DO NOSSO PARA SEMPRE ✦</p>
+
+    <h2>Desde o nosso primeiro beijo...</h2>
+
+    <p class="contador-descricao">
+        Aquele dia tornou-se uma das páginas mais bonitas da nossa história. ❤️
+    </p>
+
+    <p class="contador-data">01 · 10 · 2025</p>
+
+    <div class="contador-grelha">
+        <div class="contador-bloco">
+            <span id="diasAmor">0</span>
+            <p>dias</p>
+        </div>
+
+        <div class="contador-bloco">
+            <span id="horasAmor">00</span>
+            <p>horas</p>
+        </div>
+
+        <div class="contador-bloco">
+            <span id="minutosAmor">00</span>
+            <p>minutos</p>
+        </div>
+
+        <div class="contador-bloco">
+            <span id="segundosAmor">00</span>
+            <p>segundos</p>
+        </div>
+    </div>
+
+    <p class="contador-final">
+        Um beijo, uma memória, uma história que continua. ✨
+    </p>
+</section>
+
+<!-- FRASCO MAGICO DAS MEMORIAS -->
+<section class="frasco-memorias" id="frascoMemorias">
+
+    <p class="frasco-etiqueta">✦ UM PEQUENO PEDAÇO DE NÓS ✦</p>
+
+    <h2>O nosso frasco de memórias</h2>
+
+    <p class="frasco-intro">
+        Há momentos que merecem ser guardados para sempre.
+        Abre o frasco e descobre uma pequena surpresa nossa. ❤️
+    </p>
+
+    <div class="frasco-ilustracao" id="frascoIlustracao">
+        <span class="brilho-frasco brilho-um">✦</span>
+        <span class="brilho-frasco brilho-dois">✧</span>
+        <span class="brilho-frasco brilho-tres">✦</span>
+
+        <div class="frasco-tampa"></div>
+
+        <div class="frasco-vidro">
+            <span class="estrela-frasco estrela-um">✦</span>
+            <span class="estrela-frasco estrela-dois">✧</span>
+            <span class="estrela-frasco estrela-tres">✦</span>
+            <span class="coracao-frasco">♥</span>
+            <span class="estrela-frasco estrela-quatro">✧</span>
+        </div>
+
+        <div class="frasco-laco"></div>
+    </div>
+
+    <p class="frasco-instrucao">
+        ✨ Uma memória espera por ti...
+    </p>
+
+    <button type="button" class="botao-frasco" id="abrirFrasco">
+        Abrir o nosso frasco ♥
+    </button>
+
+    <div class="memoria-revelada" id="memoriaRevelada" hidden>
+        <span class="memoria-simbolo">♡</span>
+        <p class="memoria-titulo">Uma mensagem para nós</p>
+        <p id="textoMemoria"></p>
+        <button type="button" id="outraMemoria" class="botao-outra-memoria">
+            Descobrir outra memória ✨
+        </button>
+    </div>
+
+<!-- =====================================
+     100 MOTIVOS PARA GOSTAR DE NÓS 💗
+===================================== -->
+
+<section class="motivos-amor" id="cemMotivos">
+    <div class="motivos-conteudo">
+
+        <span class="motivos-etiqueta">UM PEQUENO SEGREDO NOSSO ✨</span>
+
+        <h2>100 motivos para gostar de nós</h2>
+
+        <p class="motivos-introducao">
+            Há coisas que nem sempre conseguimos dizer em voz alta.
+            Por isso, deixei algumas delas guardadas aqui,
+            à espera de serem descobertas. ♡
+        </p>
+
+        <div class="frasco-motivos" aria-hidden="true">
+            <span class="frasco-brilho brilho-um">✧</span>
+            <span class="frasco-brilho brilho-dois">✦</span>
+            <span class="frasco-coracao">♡</span>
+            <span class="frasco-papel papel-um"></span>
+            <span class="frasco-papel papel-dois"></span>
+            <span class="frasco-papel papel-tres"></span>
+        </div>
+
+        <p class="motivos-instrucao">
+            Escolhe um papelinho e descobre uma mensagem. 💌
+        </p>
+
+        <button
+            type="button"
+            class="botao-motivos"
+            id="tirarMotivo"
+        >
+            Tirar um papelinho ♡
+        </button>
+
+        <div
+            class="papel-motivo"
+            id="papelMotivo"
+            hidden
+            aria-live="polite"
+            aria-atomic="true"
+        >
+            <span class="papel-numero" id="numeroMotivo"></span>
+
+            <span class="papel-decoracao" aria-hidden="true">♡</span>
+
+            <p id="textoMotivo"></p>
+
+            <span class="papel-assinatura">Um pedacinho do nosso universo ✨</span>
+        </div>
+
+        <p class="motivos-progresso" id="progressoMotivos">
+            Ainda há 100 motivos à tua espera.
+        </p>
+
+        <button
+            type="button"
+            class="botao-outro-motivo"
+            id="outroMotivo"
+            hidden
+        >
+            Descobrir outro motivo ✨
+        </button>
+
+        <p class="motivos-nota">
+            Feito de pequenos momentos, carinho e memórias nossas.
+        </p>
+
+    </div>
+</section>
+
+</section>
+
+<!-- O NOSSO CEU DE ESTRELAS -->
+<section class="ceu-memorias" id="ceuMemorias">
+
+    <p class="ceu-etiqueta">✦ ESCRITO NAS ESTRELAS ✦</p>
+
+    <h2>O nosso pequeno universo</h2>
+
+    <p class="ceu-introducao">
+        Cada estrela guarda um pedacinho da nossa história.
+        Escolhe uma e descobre o que esconde. ❤️
+    </p>
+
+    <div class="mapa-estrelas" aria-label="Céu interativo de memórias">
+
+        <span class="estrela-decorativa decorativa-1">✦</span>
+        <span class="estrela-decorativa decorativa-2">✧</span>
+        <span class="estrela-decorativa decorativa-3">·</span>
+        <span class="estrela-decorativa decorativa-4">✧</span>
+        <span class="estrela-decorativa decorativa-5">✦</span>
+        <span class="estrela-decorativa decorativa-6">·</span>
+
+        <button type="button"
+            class="estrela-memoria estrela-primeira"
+            style="--x: 20%; --y: 28%;"
+            data-titulo="O nosso primeiro beijo"
+            data-mensagem="1 de outubro de 2025. Um momento especial que passou a fazer parte da nossa história."
+            data-fotografia="imagens/beijo.jpeg"
+            aria-label="Descobrir a memória do nosso primeiro beijo">
+            ✦
+        </button>
+
+        <button type="button"
+            class="estrela-memoria estrela-segunda"
+            style="--x: 50%; --y: 18%;"
+            data-titulo="Os nossos momentos"
+            data-mensagem="São os pequenos momentos juntos que, muitas vezes, acabam por se tornar as melhores recordações."
+            aria-label="Descobrir uma mensagem sobre os nossos momentos">
+            ✦
+        </button>
+
+        <button type="button"
+            class="estrela-memoria estrela-terceira"
+            style="--x: 78%; --y: 32%;"
+            data-titulo="A nossa história"
+            data-mensagem="Ainda temos tantas experiências para viver, fotografias para tirar e histórias para contar."
+            aria-label="Descobrir uma mensagem sobre a nossa história">
+            ✦
+        </button>
+
+        <button type="button"
+            class="estrela-memoria estrela-quarta"
+            style="--x: 33%; --y: 66%;"
+            data-titulo="Uma pequena lembrança"
+            data-mensagem="Que este cantinho te faça sorrir sempre que o visitares. Há memórias que merecem um lugar só delas."
+            aria-label="Descobrir uma pequena lembrança">
+            ✦
+        </button>
+
+        <button type="button"
+            class="estrela-memoria estrela-quinta"
+            style="--x: 70%; --y: 73%;"
+            data-titulo="Ainda há muito por viver"
+            data-mensagem="Esta história não fica guardada apenas nas fotografias. Continua a escrever-se em cada novo dia."
+            aria-label="Descobrir uma mensagem sobre o futuro">
+            ✦
+        </button>
+
+    </div>
+
+    <p class="ceu-dica">Toca numa estrela para revelar a sua surpresa ✨</p>
+
+    <div class="detalhe-memoria-ceu"
+        id="detalheMemoriaCeu"
+        role="region"
+        aria-live="polite"
+        aria-atomic="true"
+        hidden>
+
+        <p class="detalhe-estrela">✧ UMA MEMÓRIA NOSSA ✧</p>
+
+        <h3 id="tituloMemoriaCeu">A nossa memória</h3>
+
+        <img id="fotografiaMemoriaCeu"
+            src="imagens/beijo.jpeg"
+            alt="Fotografia da nossa memória"
+            hidden />
+
+        <p id="textoMemoriaCeu"></p>
+
+        <button type="button"
+            class="fechar-memoria-ceu"
+            id="fecharMemoriaCeu">
+            Voltar ao céu ✨
+        </button>
+
+    </div>
+
+</section>
+
+            <p class="mensagem-final">
+                E isto é apenas o começo... ✨
+            </p>
+
+        </section>
+    </main>
+
+</body>
+</html>
